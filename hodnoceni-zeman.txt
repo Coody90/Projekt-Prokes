@@ -1,0 +1,15 @@
+Ceníme práci na projektu! 🏆 Prohlédli jsme si kód a máme k němu následující poznámky:
+
+1. Pojmenování identifikátorů - Soubor je pojmenován Evidence, ovšem třída je pojmenována EvidencePojistenych. Jméno souboru a třídy by mělo být hlavně v Javě v tomto případě stejné.
+2. Dodržení principů SRP a SoC - Metody zobrazSeznamPojistenych() a vyhledejPojisteneho(..) by mohly hodnoty spíše vracet než vypisovat (return). Validace vstupních dat by se neměla odehrávat ve třídě EvidencePojisteni, protože tak není možné v daný čas reagovat na
+                                 případné chyby. Díky tomu, že třída EvidencePojisteni řeší zároveň práci s daty a výstup do konzole v případě špatného uživatelského vstupu, dochází k porušení principu SoC. 
+3. Vhodný výběr datových typů - ok
+4. Formátování kódu - ok
+5. Duplicitní kód a nekonečné cykly - Nekonečný cyklus (while (true)) v hlavní smyčce aplikace by mohl zhoršit přehlednost kódu. Doporučuji nahrazení jinou podmínkou. 
+6. Validace vstupních dat - Validace se nachází v programu zbytečně dvakrát - jak v metodě main, tak ve třídě EvidencePojisteni. Dále validace v metodě main opomíjí kontrolu telefonního čísla. Bylo by lepší místo if podmínek použít u validace cykly, aby bylo možné
+                            se v případě neplatného vstupu k danému vstupu vrátit a eliminovala by se tak nutnost všechna data zadávat znova.
+7. Logičnost a složitost - Zmíněno výše.
+8. Komentáře - ok
+9. Celkové hodnocení - Zadání je splněno. Doporučil bych ovšem přepracovat validaci vstupních dat a využití návratových hodnot ve třídě EvidencePojistenych.
+
+Doporučujeme případné výtky v kódu opravit, abyste jej mohli pak prezentovat budoucímu zaměstnavateli v co nejlepší kvalitě. Pokud byste potřebovali s čímkoli pomoci, naplánujte si s námi konzultaci, rádi vám poradíme!
